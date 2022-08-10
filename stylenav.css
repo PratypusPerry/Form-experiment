@@ -1,5 +1,7 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 html{
     background-image: radial-gradient(blue, pink);
@@ -8,9 +10,10 @@ html{
 .something{
     width: 80%;
     margin: 0% auto;
+    height: 75px;
 }
 header{
-    background-image: linear-gradient(to bottom right, blue, pink 50%);
+    background-color: aliceblue;
 }
 header::after{
     content: "";
@@ -20,6 +23,7 @@ header::after{
 h1{
     float: left;
     color: rgb(147, 109, 4);
+    padding-top: 15px;
 }
 nav{
     float: right;
@@ -32,7 +36,7 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 70px;
-    padding-top: 30px;
+    padding-top: 25px;
     position: relative;
 }
 nav a{
@@ -51,7 +55,7 @@ nav a::before{
     height: 5px;
     width: 0%;
     background-color: darkblue;
-    top: 75px;
+    top: 70px;
     position: absolute;
     transition: all ease-in-out 250ms;
 }

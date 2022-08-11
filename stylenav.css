@@ -11,6 +11,9 @@ html{
     width: 80%;
     margin: 0% auto;
     height: 75px;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 100%;
 }
 header{
     background-color: aliceblue;
@@ -20,10 +23,13 @@ header::after{
     display: table;
     clear: both;
 }
-h1{
+.heading{
     float: left;
     color: rgb(147, 109, 4);
-    padding-top: 15px;
+    padding-top: 25px;
+    height: 60px;
+    font-size: large;
+    font-weight: 1000;
 }
 nav{
     float: right;
@@ -34,7 +40,7 @@ nav ul{
     list-style: none;
 }
 nav li{
-    display: inline-block;
+    float: right;
     margin-left: 70px;
     padding-top: 25px;
     position: relative;
@@ -43,7 +49,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: darkmagenta;
-    font-size: larger;
+    font-size: medium;
     font-weight: 1000;
 }
 nav a:hover{
@@ -61,4 +67,26 @@ nav a::before{
 }
 nav a:hover::before{
     width: 100%;
+}
+.searchbar{
+    padding-left: 10%;
+    padding-top: 25px;
+    /* background-color: red; */
+}
+input[type="text"]{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+    width: 150px;
+
+}
+button{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid black;
+    height: 32px;
+    background-color: burlywood;
+    color: darkmagenta;
 }

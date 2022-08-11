@@ -8,8 +8,9 @@ html{
     background-size: 400% 400%;
 }
 .something{
-    width: 80%;
-    margin: 0% auto;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: 75px;
     display: grid;
     grid-template-columns: 20% 20% 60%;
@@ -24,12 +25,17 @@ header::after{
     clear: both;
 }
 .heading{
+    padding-left: 25px ;
     float: left;
     color: rgb(147, 109, 4);
     padding-top: 25px;
     height: 60px;
     font-size: large;
     font-weight: 1000;
+}
+.picks{
+    padding-left: 30px;
+    
 }
 nav{
     float: right;
@@ -69,8 +75,8 @@ nav a:hover::before{
     width: 100%;
 }
 .searchbar{
-    padding-left: 10%;
-    padding-top: 25px;
+    padding-left: 5px;
+    padding-top: 20px;
     /* background-color: red; */
 }
 input[type="text"]{
@@ -79,7 +85,7 @@ input[type="text"]{
     height: 30px;
     outline: none;
     border: 1px solid black;
-    width: 150px;
+    width: 80%;
 
 }
 button{
